@@ -7,7 +7,7 @@ const AWS_ACCOUNT_ID = process.env.AWS_ACCOUNT_ID;
 const AWS_ACCESS_KEY_ID = process.env.AWS_ACCESS_KEY_ID;
 const AWS_SECRET_ACCESS_KEY = process.env.AWS_SECRET_ACCESS_KEY;
 const AWS_USERNAME = process.env.AWS_USERNAME;
-const AWS_CONFIG_REGION = 'us-west-2';
+const AWS_CONFIG_REGION = 'us-east-2';
 const LOAD_BALANCER_ARN = 'arn:aws:elasticloadbalancing:us-east-2:826158494020:loadbalancer/app/microservicemovies-review/2f4ca0b1993586c4';
 
 const ARGS = process.argv.slice(2);
