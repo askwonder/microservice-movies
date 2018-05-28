@@ -3,7 +3,7 @@ function createUsersTaskDefinition(accountID, region, tag, family, revision) {
     containerDefinitions: [
       {
         name: 'users-service-review',
-        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies\/users-service-review:${tag}`,
+        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies-review\/users-service-review:${tag}`,
         essential: true,
         memoryReservation: 300,
         cpu: 300,
@@ -45,7 +45,7 @@ function createUsersTaskDefinition(accountID, region, tag, family, revision) {
       },
       {
         name: 'users-db-review',
-        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies\/users-db-review:${tag}`,
+        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies-review\/users-db-review:${tag}`,
         essential: true,
         memoryReservation: 300,
         cpu: 300,

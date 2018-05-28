@@ -3,7 +3,7 @@ function createWebTaskDefinition(accountID, region, tag, usersURL, moviesURL) {
     containerDefinitions: [
       {
         name: 'web-service-review',
-        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies\/web-service-review:${tag}`,
+        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies-review\/web-service-review:${tag}`,
         essential: true,
         memoryReservation: 300,
         cpu: 300,

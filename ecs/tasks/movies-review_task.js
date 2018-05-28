@@ -3,7 +3,7 @@ function createMoviesTaskDefinition(accountID, region, tag, family, revision) {
     containerDefinitions: [
       {
         name: 'movies-service-review',
-        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies\/movies-service-review:${tag}`,
+        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies-review\/movies-service-review:${tag}`,
         essential: true,
         memoryReservation: 300,
         cpu: 300,
@@ -45,7 +45,7 @@ function createMoviesTaskDefinition(accountID, region, tag, family, revision) {
       },
       {
         name: 'movies-db-review',
-        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies\/movies-db-review:${tag}`,
+        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies-review\/movies-db-review:${tag}`,
         essential: true,
         memoryReservation: 300,
         cpu: 300,
@@ -74,7 +74,7 @@ function createMoviesTaskDefinition(accountID, region, tag, family, revision) {
       },
       {
         name: 'swagger-review',
-        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies\/swagger-review:${tag}`,
+        image: `${accountID}.dkr.ecr.${region}.amazonaws.com\/microservicemovies-review\/swagger-review:${tag}`,
         essential: true,
         memoryReservation: 300,
         cpu: 300,
